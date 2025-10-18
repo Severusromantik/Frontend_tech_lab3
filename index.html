@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блочна верстка (Float та Flex)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h2>Завдання 1: Верстка на Float</h2>
+    <div class="container float-layout">
+        <div class="block header-block">
+            <p>Text</p>
+        </div>
+
+        <div class="content-wrapper clearfix"> 
+            <div class="block content-main float-item">
+                <p>Text</p>
+            </div>
+            <div class="block content-sidebar float-item">
+                <p>Img.</p>
+            </div>
+        </div>
+
+        <div class="block footer-block">
+            <p>Img.</p>
+        </div>
+    </div>
+
+    <h2>Завдання 2: Верстка на Flex</h2>
+    <div class="container flex-layout">
+        <div class="block flex-header-block">
+            <p>Text</p>
+        </div>
+
+        <div class="flex-center-wrapper"> 
+            <div class="block flex-content-main">
+                <p>Text</p>
+            </div>
+            <div class="block flex-content-sidebar">
+                <p>Img.</p>
+            </div>
+        </div>
+
+        <div class="block flex-footer-block">
+            <p>Img.</p>
+        </div>
+    </div>
+
+</body>
+</html>

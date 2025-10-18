@@ -1,0 +1,108 @@
+/* Базові та загальні стилі */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 50%; 
+    margin: 20px auto; 
+    border: 1px solid #ccc;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block {
+    padding: 0;
+}
+
+/*  Стилі для float макету (Завдання 1) */
+
+.float-layout .header-block {
+    background-color: #6daae3; 
+    width: 100%; 
+    min-height: 120px;
+    line-height: 120px;
+}
+
+.float-layout .content-main {
+    background-color: #b7e497; 
+    width: 75%; 
+    float: left; 
+}
+
+.float-layout .content-sidebar {
+    background-color: #8cba6b; 
+    width: 25%; 
+    float: left; 
+}
+
+.float-layout .content-main,
+.float-layout .content-sidebar {
+    min-height: 500px; 
+    line-height: 500px; 
+}
+
+.float-layout .footer-block {
+    background-color: #5ce7c7; 
+    width: 100%;
+    clear: both; 
+    min-height: 100px;
+    line-height: 100px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+/*  Стиіл для flex макету (Завдання 2) */
+
+.flex-header-block,
+.flex-footer-block {
+    width: 100%;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+}
+
+.flex-header-block {
+    background-color: #6daae3; 
+    min-height: 120px;
+}
+
+.flex-footer-block {
+    background-color: #5ce7c7; 
+    min-height: 100px;
+}
+
+.flex-center-wrapper {
+    width: 100%;
+    display: flex; 
+    min-height: 500px; 
+}
+
+.flex-content-main {
+    background-color: #b7e497; 
+    width: 75%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-content-sidebar {
+    background-color: #8cba6b; 
+    width: 25%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
